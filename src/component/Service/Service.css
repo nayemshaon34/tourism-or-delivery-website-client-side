@@ -1,0 +1,7 @@
+.cart{
+    background-color: rgba(223, 228, 222, 0.503);
+    color: teal;
+}
+.card-contain{
+    overflow: hidden;
+}

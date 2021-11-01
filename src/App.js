@@ -1,29 +1,55 @@
+import { BrowserRouter,
+        Switch,
+        Route,
+        } from 'react-router-dom';
 import './App.css';
-import Home from './component/Home/Home';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
-import Login from './component/Login/Login';
+import AddService from './Component/AddService/AddService';
+import Footer from './Component/Footer/Footer';
+import Home from './Component/Home/Home';
+import Login from './Component/Login/Login';
+import ManageOrders from './Component/ManageOrders/ManageOrders';
+import Menubar from './Component/Menubar/Menubar';
+import NotFound from './Component/NotFound/NotFound';
+import PrivateRoute from './Component/PrivateRoute/PrivateRoute';
+import Tours from './Component/Tours/Tours';
+import YourOrder from './Component/YourOrder/YourOrder';
+import AuthProvider from './Context/AuthProvider';
 
 function App() {
   return (
-    <div>
-        <Router>
+    <div className="">
+        <AuthProvider>
+        <BrowserRouter>
+        <Menubar></Menubar>
           <Switch>
-            <Route exact path="/">
+            <Route exact path="/"> 
               <Home></Home>
             </Route>
             <Route path="/home">
-              <Home></Home>
+                <Home></Home>
             </Route>
-            <Route>
+            <Route path="/login">
               <Login></Login>
             </Route>
+            <PrivateRoute path="/tours">
+              <Tours></Tours>
+            </PrivateRoute>
+            <PrivateRoute path="/myOrder">
+              <YourOrder></YourOrder>
+            </PrivateRoute>
+            <PrivateRoute path="/manageOrders">
+              <ManageOrders></ManageOrders>
+            </PrivateRoute>
+            <Route path="/addService">
+                <AddService></AddService>
+              </Route>
+            <Route path="*">
+              <NotFound></NotFound>
+            </Route>
           </Switch>
-        </Router>
+          <Footer></Footer>
+        </BrowserRouter>
+        </AuthProvider>
     </div>
   );
 }

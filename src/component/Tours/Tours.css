@@ -1,0 +1,12 @@
+.cart{
+    background-color: rgba(223, 228, 222, 0.503);
+    color: teal;
+}
+.description{
+    background-color: rgba(211, 221, 209, 0.177);
+    color: rgb(135, 125, 125);
+    border-radius: 10px;
+}
+.card-contain{
+        overflow-x: hidden;
+}
