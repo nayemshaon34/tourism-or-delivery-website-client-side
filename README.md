@@ -1,3 +1,20 @@
+# The Project Name
+Holiday Hype
+
+# Project Link
+
+# Backend Code Link
+
+# Why Choose Holiday Hype?
+1.Things are cheaper with groups - economies of scale
+
+2.Included Handsome meals
+
+3.Inclusive accommodation
+
+4.Tried & tested itineraries & activities
+
+5.Top-Notch Service
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
