@@ -1,3 +1,25 @@
+# The Project Name
+Holiday Hype
+
+
+# Project Link
+https://tourism-website-client-s-1b9f1.web.app/manageOrders
+
+# Backend Code Link
+https://github.com/programming-hero-web-course1/tourism-or-delivery-website-server-side-nayemshaon34
+
+Why Choose Holiday Hype?
+1.Things are cheaper with groups - economies of scale
+
+2.Included Handsome meals
+
+3.Inclusive accommodation
+
+4.Tried & tested itineraries & activities
+
+5.Top-Notch Service
+
+Getting Started
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
